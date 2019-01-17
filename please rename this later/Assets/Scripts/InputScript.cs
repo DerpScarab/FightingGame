@@ -7,7 +7,6 @@ public class InputScript : MonoBehaviour {
 	public bool  facingRight;
 	public int   finalInputDirection;
 	public int   finalInputAttack;
-	public int   combinedInput;
 	public int[] inputButton = new int[4];
 
 	// Use this for initialization
@@ -110,8 +109,8 @@ public class InputScript : MonoBehaviour {
 		}
 		
 		//checks for multiple buttons
-		combinedInput = inputButton[0] + inputButton[1] +
-			inputButton[3] + inputButton[4];
+		int combinedInput = inputButton[0] + inputButton[1] +
+			inputButton[2] + inputButton[3];
 
 		//returns throw if two buttons are pressed
 		if (combinedInput == 2){

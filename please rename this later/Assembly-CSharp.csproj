@@ -54,18 +54,19 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\InputScript.cs" />
+     <Compile Include="Assets\Scripts\MoveData.cs" />
      <Compile Include="Assets\Scripts\MoveScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/smiller7644/please rename this later/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/smiller7644/Documents/GitHub/FightingGame/please rename this later/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/smiller7644/please rename this later/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/smiller7644/Documents/GitHub/FightingGame/please rename this later/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/smiller7644/please rename this later/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/smiller7644/Documents/GitHub/FightingGame/please rename this later/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/smiller7644/please rename this later/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/smiller7644/Documents/GitHub/FightingGame/please rename this later/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
