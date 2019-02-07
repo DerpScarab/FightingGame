@@ -24,6 +24,9 @@ public class MoveData : MonoBehaviour {
 		public float collisionYOffset;   //Y offset of the collision box
 		public float xMovement;          //X movement
 		public float yMovement;          //Y movement
+		public int[] hitGatlings;        //
+		public int[] blockGatlings;      //
+		public int[] whiffGatlings;      //
 		public float gatlingDisplacement;//the amount the next chained move goes forwards
 	}
 
@@ -37,23 +40,25 @@ public class MoveData : MonoBehaviour {
 		public float hitboxYOffset;      //Y offset of the hitbox
 		public int   active;             //frames before the hitbox deactivates
 		public int   blockType;          //[High, Mid, Low, Unblockable]
-		public int[] attribute;          //[Head, Body, Foot, Throw, Projectile]
+		public int   attribute;          //[Head, Body, Foot, Throw, Projectile]
 		public int   forcedState;        //state forced on ground hit [none, stand, crouch, launch]
 		public int[] whiffState;         //states a move doesn't hit [none, stand, crouch, grounded, airborn]
 		public int   damage;             //damage dealt by the move
 		public int   level;              //level (dictates hitstun/blockstun etc.)
 		public float chipMultiplier;     //adjusts the damage dealt if blocked
-		public float hitstunMultiplier;  //multiplies hitstun by this value
+		public float hitstunBonus;       //adds this value to hitstun
+		public float airHitstunBonus;    //adds this value to air hitstun
 		public float meterMultiplier;    //multiplies meter gain by this value (0 for supers)
 		public float minDamageMultiplier;//changes the minimum damage
 		public int[] hitEffect;          //effect on hit (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
-		public int   airHitEffect;       //effect on hit vs airborn (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
-		public int   counterHitEffect;   //effect on counterhit (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
-		public int   airCounterHitEffect;//effect on counterhit vs airborn (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
+		public int[] airHitEffect;       //effect on hit vs airborn (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
+		public int[] counterHitEffect;   //effect on counterhit (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
+		public int[] airCounterHitEffect;//effect on counterhit vs airborn (none, ground bounce, wall bounce, crumple, soft knockdown, hard knockdown)
 		public int   groundSendAngle;    //knockback angle vs. ground
 		public int   airSendAngle;       //knockback angle vs. air
 		public int   groundKB;           //knockback vs. ground
 		public int   airKB;              //knockback vs. air
+		public int   transitionOnHit;    //transitions into a different animaiton on hit (like a throw)
 	}
 
 	public class hurtboxData
