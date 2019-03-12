@@ -8,26 +8,18 @@ public class MoveData : MonoBehaviour {
 	void Start () {
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	public class perFrame
 	{
-		public int hurtboxID;            //main ID of the hurtbox
-		public int hitboxID;             //main ID of the hitbox
-		public float collisionXSize;     //X size of the collision box
-		public float collisionYSize;     //Y size of the collision box
-		public float collisionXOffset;   //X offset of the collision box
-		public float collisionYOffset;   //Y offset of the collision box
-		public float xMovement;          //X movement
-		public float yMovement;          //Y movement
+		public int moveID;               //
+		public int[][] boxID;            //stores [hurtbox][hitbox]
+	  //public int hurtboxID;            //main ID of the hurtbox
+	  //public int hitboxID;             //main ID of the hitbox
 		public int[] hitGatlings;        //
 		public int[] blockGatlings;      //
 		public int[] whiffGatlings;      //
 		public float gatlingDisplacement;//the amount the next chained move goes forwards
+		public float landingRecovery;    //
 	}
 
 	public class hitboxData
@@ -71,5 +63,11 @@ public class MoveData : MonoBehaviour {
 		public float hurtboxYSize;    //Y size of the hurtbox
 		public float hurtboxXOffset;  //X offset of the hurtbox
 		public float hurtboxYOffset;  //Y offset of the hurtbox
+		public float collisionXSize;  //X size of the collision box
+		public float collisionYSize;  //Y size of the collision box
+		public float collisionXOffset;//X offset of the collision box
+		public float collisionYOffset;//Y offset of the collision box
+		public float xMovement;       //X movement
+		public float yMovement;       //Y movement
 	}
 }
